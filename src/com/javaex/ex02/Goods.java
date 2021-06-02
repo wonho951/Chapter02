@@ -7,20 +7,16 @@ public class Goods {
 	private String name;
 	private int price;
 	
-	//생성자
+	//생성자	
 	
-	
-	//메소드 - 겟터셋터
-	
-	
-	//메소드 - 일반
-	public void setName(String n) {
+	//메소드 - (g/s)
+	public void setName(String name) {
 		
-		name = n;
+		this.name = name;
 	}
 	
-	public void setPrice(int p) {
-		price = p;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	
 	public String getName() {
@@ -31,6 +27,7 @@ public class Goods {
 		return price;
 	}
 	
+	//메소드(일반)
 	public void showInfo() {		
 		System.out.println("상품명 : " + name);
 		System.out.println("가격 : " + price);
