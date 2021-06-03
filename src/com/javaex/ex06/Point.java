@@ -21,7 +21,7 @@ public class Point {
 		this.x = x;
 	}
 	
-	/*
+	/*  같은 생성자로 판단함.
 	public point(int y) {//파라미터의 자료형이 같으면 구별 불가능
 		this.y = y;
 	}
@@ -49,11 +49,19 @@ public class Point {
 	
 	
 	//메소드-일반
-	public void draw() {		
-		System.out.println("점[x=" + x + " , y=" + y + "]을 그렸습니다.");
-		
+	public void draw() {//그리는 복잡한 기능을 구현해야된다고 가정...
+		System.out.println("점[x=" + x + " , y=" + y + "]을 그렸습니다.");		
 	}
 	
-	
+	public void draw(boolean flag) {
+		//그리는 복잡한 기능을 구현해야된다고 가정...
+		
+		if (flag == true) {
+			System.out.println("점[x=" + x + " , y=" + y + "]을 그렸습니다.");
+		} else {
+			System.out.println("점[x=" + x + " , y=" + y + "]을 지웠습니다.");
+		}
+		
+	}
 	
 }
