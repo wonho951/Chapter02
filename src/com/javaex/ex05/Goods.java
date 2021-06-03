@@ -12,10 +12,18 @@ public class Goods {
 	//이름은 필드 이름으로 정해져있음(못바꿈)
 	//void나 return자리도 없으면 그냥 메소드임.
 	//내부 소스코드 없으면 자동으로 만들지 않아도 있는걸로 인식함.
+	//생성자 복수일때 디폴트 생성자 생성 안하면 오류남.
+	
 	public Goods() {
 		//Goods를 메모리(힙)에 올리는거
 	}
 	
+	
+	public Goods(String name, int price) { //--> 메모리에 한방에 올림.
+		//Goods를 메모리(힙)에 올리는거
+		this.name = name;
+		this.price = price;
+	}
 	
 	
 	
