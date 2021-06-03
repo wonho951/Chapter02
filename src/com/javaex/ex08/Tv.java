@@ -7,7 +7,7 @@ public class Tv {
 		private int volume;
 		private boolean power;
 		
-		//생성자
+		//생성자 (기본생성자 없어도 되니 굳이 안만듦)
 		public Tv(int channel, int volume, boolean power) {
 			this.channel = channel;
 			this.volume = volume;
@@ -15,7 +15,7 @@ public class Tv {
 		}
 		
 		
-		//메소드(세터 없어도 됨)	
+		//메소드(세터 x)	
 		
 		public int getChanner() {
 			return channel;
