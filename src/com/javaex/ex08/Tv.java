@@ -40,12 +40,45 @@ public class Tv {
 		//볼륨 영역
 		public void volume (int volume) {
 			if(power == true) {
-				if (this.volume > 100) {
-					volume = 100;
+				if (volume > 100) {
+					this.volume = 100;
+				}else {
+					this.volume = volume;
 				}
-			} else {
+			} /*else {
 				status();
-			}			
+			}*/			
+		}
+		
+		
+		public void volume (boolean up) {
+			if (up == true) {
+				volume++;
+			} else {
+				volume--;
+			}
+		}
+		
+		
+		
+		//채널 영역
+		public void channel (int channel) {
+			if (power == true) {
+				if (channel > 255 || channel < 1) {
+					System.out.println("채널을 확인해주세요.");
+				} else {
+					this.channel = channel;
+				}
+			}
+				
+		}
+		
+		public void channel (boolean up) {
+			if (up == true) {
+				channel++;
+			} else {
+				channel--;
+			}
 		}
 		
 		
@@ -77,14 +110,17 @@ public class Tv {
 		
 		
 		
-		
-		
 		//최종출력
+		/*
 		public void status() {
 			if (power == true ) {
 			System.out.println("채널 :" + channel + " 볼륨 : " + volume + " "+ power );
 			} else {
 				System.out.println("전원이 꺼져있습니다.");
 			}
+		}*/
+		
+		public void status() {
+			System.out.println("채널 :" + channel + " 볼륨 : " + volume + " 전원상태 : " + power);
 		}
 	}

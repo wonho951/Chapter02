@@ -10,11 +10,24 @@ public class TvApp {
 		tv.status();
 		
 		tv.power(true);
-		tv.volume(90);
+		tv.volume(120);
 		tv.status();
 		
-	
+		tv.volume(false);
+		tv.status();
 
+		tv.channel(0);
+		tv.status();
+		
+		tv.channel(true);
+		tv.channel(true);
+		tv.channel(true);
+		tv.status();
+		
+		
+		tv.power(false);
+		tv.status();
+		
 	}
 
 }
