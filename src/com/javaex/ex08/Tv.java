@@ -1,8 +1,8 @@
 package com.javaex.ex08;
 
 public class Tv {
-
-	//필드
+		
+		//필드
 		private int channel;
 		private int volume;
 		private boolean power;
@@ -34,7 +34,11 @@ public class Tv {
 		
 		//전원
 		public void power (boolean on) {	
-			this.power = on;
+			if (on == true) {
+				this.power = true;
+			} else {
+				this.power = false;
+			}
 		}					
 		
 		//볼륨 영역
@@ -45,15 +49,13 @@ public class Tv {
 				}else {
 					this.volume = volume;
 				}
-			} /*else {
-				status();
-			}*/			
+			}		
 		}
 		
 		
 		public void volume (boolean up) {
 			if (up == true) {
-				volume++;
+				volume ++;
 			} else {
 				volume--;
 			}
@@ -80,47 +82,17 @@ public class Tv {
 				channel--;
 			}
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+				
 		//최종출력
-		/*
+		
 		public void status() {
 			if (power == true ) {
-			System.out.println("채널 :" + channel + " 볼륨 : " + volume + " "+ power );
+				System.out.println("전원이 켜져있습니다.");
+				System.out.println("채널 :" + channel + " 볼륨 : " + volume);
 			} else {
 				System.out.println("전원이 꺼져있습니다.");
 			}
-		}*/
-		
-		public void status() {
-			System.out.println("채널 :" + channel + " 볼륨 : " + volume + " 전원상태 : " + power);
+			System.out.println("");
 		}
+	
 	}
