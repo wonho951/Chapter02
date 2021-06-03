@@ -19,7 +19,7 @@ public class Goods {
 	}
 	
 	
-	public Goods(String name, int price) { //--> 메모리에 한방에 올림.
+	public Goods(String name, int price) { //--> 메모리에 한방에 올림.자료형의 순서가 다르면 다른걸로 인식함.적용가능.
 		//Goods를 메모리(힙)에 올리는거
 		this.name = name;
 		this.price = price;
