@@ -26,6 +26,8 @@ public class SongApp {
 		Song iu = new Song("이민수", 3, 2010, "Real", "좋은날", "아이유");
 		iu.showInfo();
 		
+		
+		
 		   
 		
 	}
