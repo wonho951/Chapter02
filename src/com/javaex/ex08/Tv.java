@@ -38,21 +38,16 @@ public class Tv {
 	
 	//메소드 - 일반
 	
+	//전원
 	public void power (boolean on) {
-		if (on == true) {
-			System.out.println("전원 on");
-		} else {
-			System.out.println("전원 off");
-		}		
+		this.power = on;
 	}
 	
-	
+	//채널
 	public void channel(int channel) {
-		if(channel <=255) {
-			System.out.println(channel + "번 입니다.");
-		} else {
-			System.out.println("채널을 다시 설정해주세요.");
-		}
+		if(channel > 255) {
+			channel = this.channel--;			
+		} 
 	}
 	
 	
