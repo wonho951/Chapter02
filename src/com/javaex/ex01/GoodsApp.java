@@ -1,8 +1,16 @@
 package com.javaex.ex01;
 
 public class GoodsApp {
-
+	//필드
+	public static String name; // 여기서 필드 생성해도 됨.
+	//생성자
+	
+	//메소드g/s
+	
+	//메소드-일반
 	public static void main(String[] args) {
+
+		
 		
 		//메인 시나리오.
 		
@@ -25,6 +33,9 @@ public class GoodsApp {
 		cup.price = 2000;
 		System.out.println(cup.name + "," + cup.price);
 	
+		
+		System.out.println(name);//스태틱으로 필드 선언했기때문에 출력 가능
 	}
 
+	
 }
