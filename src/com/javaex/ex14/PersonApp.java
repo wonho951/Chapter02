@@ -28,6 +28,7 @@ public class PersonApp {
 		
 		Student s04 = new Student("이효리", 45, "제주고등학교");
 		s04.showInfo();
+		//s04.showInfo(false); --> 변수명이 같아도 파라미터가 다르면 선택가능.
 		
 		
 		Person p = new Person();

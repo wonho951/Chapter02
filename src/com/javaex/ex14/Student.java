@@ -32,6 +32,7 @@ public class Student extends Person{
 		super();
 		super.setName(name); //부모쪽에 있는 놈 데려올땐 super 사용
 		super.setAge(age);
+		//this.setAge(age); ---> 부모 age가 맘에 안들때 this로 사용해서 자식에 있는거 사용가능.
 		this.schoolName = schoolName; // 부모 말고 자기 자신한테 받을땐 this 사용
 		System.out.println("Student(3)");// PersonApp에서 뭐 찍히나 실험
 	}
@@ -46,6 +47,14 @@ public class Student extends Person{
 		this.schoolName = schoolName;
 	}
 	
+	/* 부모쪽의 setAge가 마음에 안들경우 자식쪽에서 바꿔도 됨.(단, 이름이 같으면 부모꺼 못불러옴)
+	public void setAge(int age) {
+		if (age < 0) {
+			super.age = 0;
+		}
+	}
+	*/
+	
 	//데이터 확인용
 	@Override
 	public String toString() {
@@ -56,7 +65,7 @@ public class Student extends Person{
 	
 	//메소드 -일반
 	
-	public void showInfo() {
+	public void showInfo(boolean on) { // 부모랑 변수명이 같아도 파라미터가 다르면 사용가능
 		System.out.println("------------------");
 		System.out.println("이름 : " + super.name);
 		System.out.println("나이 : " + age);
