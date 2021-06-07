@@ -7,7 +7,7 @@ public class Person {
 	private String name;
 	private int age;
 	*/
-	protected String name;
+	protected String name; //protected 사용시 상속받은 자식이 접근 가능
 	protected int age;
 	
 	
