@@ -11,6 +11,17 @@ public class PointApp {
 		p00.showInfo();
 		
 		
+		
+		ColorPoint cp1 = new ColorPoint("red");
+		ColorPoint cp2 = new ColorPoint(10, 10, "blue");
+		
+		System.out.println(cp1.toString());
+		
+		System.out.println(cp2.toString());
+		
+		cp1.showInfo();
+		
+		cp2.showInfo();
 	}
 
 }

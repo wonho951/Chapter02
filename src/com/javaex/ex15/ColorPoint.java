@@ -3,12 +3,17 @@ package com.javaex.ex15;
 public class ColorPoint extends Point {
 
 	//필드
-	private String color;
+	protected String color;
 
 	
 	//생성자
 	public ColorPoint(String color) {
 		super();
+		this.color = color;
+	}
+	
+	public ColorPoint(int x, int y, String color) {
+		super(x,y);
 		this.color = color;
 	}
 
@@ -34,6 +39,7 @@ public class ColorPoint extends Point {
 	
 	//메소드-일반
 	public void showInfo() {
-		System.out.println("x = " + super.getX() + " y = " + super.getY());
+		//System.out.println(super.getX()+", " + super.getY() + ", " + color);
+		System.out.println(color);
 	}
 }
