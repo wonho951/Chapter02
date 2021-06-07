@@ -16,6 +16,11 @@ public class PersonApp {
 
 		
 		p00.showInfo();
+		
+		
+		
+		Student s00 = new Student("이효리", 40, "제주고등학교");
+		System.out.println(s00.toString());
 	}
 
 }
