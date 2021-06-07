@@ -25,8 +25,12 @@ public class PersonApp {
 		s01.showInfo();
 		
 		
+		//부모의 문법 --> 자식이랑 비교해볼것.
+		Person p01 = new Person();
+		p01.setName("이효리");
+		p01.setAge(45);
 		
-		
+		p01.showInfo();
 		
 		
 	}
