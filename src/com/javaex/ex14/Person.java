@@ -3,9 +3,12 @@ package com.javaex.ex14;//부모
 public class Person {
 
 	//필드
+	/*
 	private String name;
 	private int age;
-
+	*/
+	protected String name;
+	protected int age;
 	
 	
 	//생성자

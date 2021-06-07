@@ -27,6 +27,9 @@ public class PersonApp {
 		//Student s03 = new Student();
 		
 		Student s04 = new Student("이효리", 45, "제주고등학교");
+		
+		Person p = new Person();
+		p.name = "바보야"; // 이걸 막기 위해서 protected 사용. 이게 다른 패키지에 있으면 사용 불가 
 	}
 
 }
