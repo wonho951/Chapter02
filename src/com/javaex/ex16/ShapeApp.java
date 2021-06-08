@@ -75,6 +75,18 @@ public class ShapeApp {
 		cArray[1] = c02;
 		cArray[2] = c03;
 		
+		
+		
+		//변수를 만들지 않고 바로 배열에 저장
+		/*
+		cArray[0] = new Circle("빨강", "검정", 11);
+		cArray[1] = new Circle("노랑", "검정", 22);
+		cArray[2] = new Circle("초록", "검정", 33);
+		*/
+		
+		
+		
+		
 		//배열을 이용한 원 그리기
 		for (int i = 0; i < cArray.length; i++) {
 			cArray[i].draw();
