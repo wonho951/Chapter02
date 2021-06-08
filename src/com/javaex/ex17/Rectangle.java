@@ -23,7 +23,7 @@ public class Rectangle extends Shape {
 		super(fillColor, lineColor); // 부모의 생성자 불러옴
 		this.width = width;
 		this.height = height;
-		System.out.println("Rectangle(4)");
+		//System.out.println("Rectangle(4)");
 	}
 
 	// 메소드 g/s
