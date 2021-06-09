@@ -48,4 +48,7 @@ public class Triangle extends Shape {
 		System.out.println("[면색:" + fillColor + ", 선색:" + lineColor + ", 밑변:" + width + ", 높이:" + height +"] 삼각형을 그렸습니다.");
 	}
 	
+	public double area() {
+		return (width * height) /2;
+	}
 }

@@ -49,33 +49,10 @@ public class Shape {
 		System.out.println("[면색:" + fillColor + ", 선색:" + lineColor + "도형] 을 그렸습니다.");
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	public double area() {
+		return 0.0;  // 오버라이딩--> cicle triangel rectangel에 있기 때문에 가짜로 만들어서 나중에 덮어 씌움
+	}
 	
 	
 	

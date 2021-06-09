@@ -35,4 +35,9 @@ public class Circle extends Shape{
 	public void draw() {
 		System.out.println("[면색:" + fillColor + ", 선색:" + lineColor + ", 반지름:" + radius + "] 원을 그렸습니다.");
 	}
+	
+	public double area() {
+		return radius * radius * 3.14;
+	}
+	
 }

@@ -30,11 +30,25 @@ public class ShapeApp {
 		//배열을 이용해서 그리기
 		for (int i = 0; i < sArray.length; i++) {
 			sArray[i].draw();
+						
+			
+			//오버라이딩을 이용해서 구현 가능
+			System.out.println("넓이: " + sArray[i].area());			
 		}
 		
 		
 		
+		//오버라이딩 부작용 --> 추상클래스, 추상메소드로 해결
+		//이렇게 구할때가 문제--> 출력하면 0.0 나옴--> 부모클래스에 return값에 0.0이 들어가있기때문.
+		Shape ss01 = new Shape("검정", "검정");
+		System.out.println("넓이: " + ss01.area());
 		
+		
+		
+		System.out.println(((Rectangle)sr01).getWidth());
+		//↑ 강제로 형변환 시켜서 get 사용.(시선을 바꿔줌-->재정의)
+		//Rectangle sr01 = new Rectangle("빨강", "검정", 10, 10);
+		//↑ 얘랑 같다고 생각하면됨.
 		
 		
 		
