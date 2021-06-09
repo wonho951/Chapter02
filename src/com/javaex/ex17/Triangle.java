@@ -7,12 +7,14 @@ public class Triangle extends Shape {
 	private int height;
 	
 	//생성자
+	public Triangle() {
+	}
+	
 	public Triangle(String fillColor, String lineColor, int width, int height) {
 		super(fillColor, lineColor);
 		this.width = width;
 		this.height = height;
 	}
-
 
 	//메소드 g/s
 	public int getWidth() {

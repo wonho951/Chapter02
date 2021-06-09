@@ -7,12 +7,15 @@ public class Circle extends Shape{
 
 	
 	//생성자
+	public Circle() {
+		super();
+	}
+	
 	public Circle(String fillColor, String lineColor, int radius) {
 		super(fillColor, lineColor);
 		this.radius = radius;
 	}
 
-	
 	//메소드 g/s
 	public int getRadius() {
 		return radius;
