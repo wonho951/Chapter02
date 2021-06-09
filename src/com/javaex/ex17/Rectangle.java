@@ -10,7 +10,7 @@ public class Rectangle extends Shape {
 	// 생성자
 	public Rectangle() {
 		//super();--> 부모의 디폴트생성자 불러옴
-		System.out.println("Rectangle()");
+		//System.out.println("Rectangle()");
 	}
 
 	public Rectangle(int width, int height) {
