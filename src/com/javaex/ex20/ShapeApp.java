@@ -41,6 +41,21 @@ public class ShapeApp {
 			dArray[i].draw();
 		}
 				
+		//사각형의 면적 출력
+		//System.out.println(((Rectangle)r01).area());
+		//System.out.println(((Shape)r01).area());
+		
+		
+		
+		//배열을 이용해서 면적을 출력한다.
+		for (int i = 0; i < dArray.length; i++) {
+			if (dArray[i] instanceof Shape) {				
+				System.out.println(((Shape)dArray[i]).area());
+			}
+		}
+
+		
+		
 	}
 
 }
