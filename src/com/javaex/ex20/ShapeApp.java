@@ -15,7 +15,7 @@ public class ShapeApp {
 		Drawable[] dArray = new Drawable[4];
 		
 		//사각형을 만든다
-		Drawable r01 = new Rectangle("빨강", "검정", 7, 7); //인터페이스의 메소드만 사용가능
+		Drawable r01 = new Ractangle("빨강", "검정", 7, 7); //인터페이스의 메소드만 사용가능
 		
 		//원을 만든다
 		Drawable c01 = new Circle("주황", "주황", 5);//인터페이스의 메소드만 사용가능

@@ -1,6 +1,6 @@
 package com.javaex.ex20;
 
-public class Rectangle extends Shape implements Drawable{
+public class Ractangle extends Shape implements Drawable{
 
 	/*
 	 * // 필드 private int width; private int height;
@@ -49,12 +49,12 @@ public class Rectangle extends Shape implements Drawable{
 
 	// 생성자
 
-	public Rectangle() {
+	public Ractangle() {
 		// super(); // Shape() --> 표기는 super()
 		// System.out.println("Rectangle()");
 	}
 
-	public Rectangle(String fillColor, String lineColor, int width, int height) {
+	public Ractangle(String fillColor, String lineColor, int width, int height) {
 		// super(); // Shape() --> 표기는 super()
 		super(fillColor, lineColor);
 		this.width = width;
