@@ -61,7 +61,11 @@ public class Ex01 {
 		
 		try {
 			System.out.println(intArray[3]);
-		} catch (ArrayIndexOutOfBoundsException e2) {
+		} catch (ArrayIndexOutOfBoundsException e2) { //예외처리할 문법 잘써줘야함. 배열 체크하는데 수학적 처리해버리면 그것또한 에러남.
+		//catch는 중복으로 여러번 사용가능
+			System.out.println("배열의 범위를 벗어났습니다.");
+		} catch(NullPointerException e2) {
+		//catch는 중복으로 여러번 사용가능
 			System.out.println("배열의 범위를 벗어났습니다.");
 		}
 			
